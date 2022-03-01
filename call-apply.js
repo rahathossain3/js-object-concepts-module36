@@ -2,8 +2,8 @@ const kibria = {
     id: 101,
     money: 5000,
     name: 'Rj Kibria',
-    treatDey: function (expense,) {
-        this.money = this.money - expense;
+    treatDey: function (expense, bokshis, tax) {
+        this.money = this.money - expense - bokshis - tax;
         console.log(this)
         return this.money;
     }
@@ -21,4 +21,12 @@ const normalGolam = {
     name: 'Normal Golam',
 }
 
-kibria.treatDey.call(heroBalam, 500);
+//call
+kibria.treatDey.call(heroBalam, 500, 100, 50);
+kibria.treatDey.call(heroBalam, 300, 50, 30);
+
+//apply
+kibria.treatDey.apply(heroBalam, [500, 100, 50]);
+kibria.treatDey.apply(heroBalam, [1000, 200, 100]);
+
+kibria.treatDey.apply(normalGolam, [700, 100, 70]);
