@@ -20,3 +20,5 @@ const normalGolam = {
     money: 8000,
     name: 'Normal Golam',
 }
+
+kibria.treatDey.call(heroBalam, 500);
