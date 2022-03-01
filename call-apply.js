@@ -20,12 +20,3 @@ const normalGolam = {
     money: 8000,
     name: 'Normal Golam',
 }
-
-kibria.treatDey(100);
-
-const heroTreatDey = kibria.treatDey.bind(heroBalam);
-heroTreatDey(500);
-heroTreatDey(300);
-kibria.treatDey(100);
-const normalTreatDey = kibria.treatDey.bind(normalGolam);
-normalTreatDey(500)
